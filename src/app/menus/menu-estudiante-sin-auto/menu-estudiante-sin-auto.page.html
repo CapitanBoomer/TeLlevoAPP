@@ -1,0 +1,57 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item>
+          <ion-icon name="arrow-back-circle-outline" slot="start"></ion-icon>
+          <ion-label>Desconectarse</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/administrar-perfiles']">
+          <ion-icon name="people-outline" slot="start"></ion-icon>
+          <ion-label>Perfiles</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu principal</ion-title>
+        <ion-avatar slot="end"><img
+            src="https://cdn.discordapp.com/attachments/996255673698488323/1053087437582237706/Yo_Te_llevo_1.png"
+            alt=""></ion-avatar>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://indiehoy.com/wp-content/uploads/2021/03/homero-simpson.jpg" alt="">
+        </ion-avatar>
+        <ion-card-content>
+          <ion-card-title>Homero</ion-card-title>
+          <ion-card-subtitle>Dueño</ion-card-subtitle>
+        </ion-card-content>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="alarm-outline" slot="start"></ion-icon>
+        <ion-card-subtitle>buscar viajes</ion-card-subtitle>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="alarm-outline" slot="start"></ion-icon>
+        <ion-card-subtitle>Vivo Duoc</ion-card-subtitle>
+      </ion-item>
+
+    </ion-content>
+  </div>
+</ion-app>

@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "correo":"toto",
+      "nombre_usuario": "pipo",
+      "pass": "1234",
+      "auto": true,
+      "carrera":"Analista programador"
+    }
+
+  ],
+
+ "viajes": [
+    {
+      "id": 1,
+      "nombre_usuario": "",
+      "auto": "",
+      "destino": "",
+      "puestos": "",
+      "patente": "",
+      "detalles": "",
+      "costoviaje":""
+    }
+  ]
+}
