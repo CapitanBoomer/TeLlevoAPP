@@ -2,25 +2,71 @@
   "usuarios": [
     {
       "id": 1,
-      "correo":"toto",
-      "nombre_usuario": "pipo",
+      "correo": "toto",
+      "nombre_usuario": "diego",
       "pass": "1234",
       "auto": true,
-      "carrera":"Analista programador"
-    }
-
-  ],
-
- "viajes": [
+      "carrera": "Analista programador"
+    },
     {
-      "id": 1,
-      "nombre_usuario": "",
+      "id": 2,
+      "correo": "toto",
+      "nombre_usuario": "felipe",
+      "pass": "1234",
+      "auto": false,
+      "carrera": "Analista programador"
+    }
+  ],
+  "viajes": [
+    {
+      "auto": "nissan",
+      "costoviaje": 1654,
+      "destino": "san bernardo",
+      "puestos": 3,
+      "patente": "12gdsf",
+      "detalles": "sfdhgfdhdfghf",
+      "nombreusuario": "diego",
+      "id": 1
+    },
+    {
+      "nombreusuario": "",
       "auto": "",
+      "costoviaje": 0,
       "destino": "",
-      "puestos": "",
+      "puestos": 0,
       "patente": "",
       "detalles": "",
-      "costoviaje":""
+      "id": 2
+    },
+    {
+      "nombreusuario": "",
+      "auto": "",
+      "costoviaje": 0,
+      "destino": "",
+      "puestos": 0,
+      "patente": "",
+      "detalles": "",
+      "id": 3
+    },
+    {
+      "nombreusuario": "",
+      "auto": "",
+      "costoviaje": 0,
+      "destino": "",
+      "puestos": 0,
+      "patente": "",
+      "detalles": "",
+      "id": 4
+    },
+    {
+      "nombreusuario": "",
+      "auto": "",
+      "costoviaje": 0,
+      "destino": "",
+      "puestos": 0,
+      "patente": "",
+      "detalles": "",
+      "id": 5
     }
   ]
 }
