@@ -23,5 +23,13 @@ export class EstudiantesServService {
     .subscribe(datos => {this.comportamientoListarUsuario.next(datos)})
   }
 
+  public modificarUsuarioId(id:number, usuario: any): Observable<any>
+  {
+    return this.cliente.patch(`${this.API_usuario_URL}/${id}`,usuario,{
+      headers:{
+        'Content-Type': 'application/json; charset=utf-8'
+      }
+    });
 
+}
 }

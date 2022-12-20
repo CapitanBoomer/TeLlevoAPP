@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registrarViaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form [formGroup]="formulario" (ngSubmit)="guardarDatos()">
+
+    <ion-item>
+      <ion-label position="floating">Nombre:</ion-label>
+      <ion-input type="text" formControlName="nombreusuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Auto:</ion-label>
+      <ion-input type="text" formControlName="auto"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">costo del viaje</ion-label>
+      <ion-input type="number" formControlName="costoviaje"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="floating">destino</ion-label>
+      <ion-input type="text" formControlName="destino"></ion-input>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">puestos</ion-label>
+      <ion-input type="number" formControlName="puestos"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">patente</ion-label>
+      <ion-input type="text" formControlName="patente"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">detalles</ion-label>
+      <ion-input type="text" formControlName="detalles"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button type="submit" type="submit">guardar viaje</ion-button>
+    </ion-item>
+  </form>
+
+</ion-content>

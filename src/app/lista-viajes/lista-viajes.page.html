@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Listdo de productos-->
+  <ion-card *ngFor="let producto of listaProductos">
+    <ion-card-header>
+      <ion-card-title>
+        Nombre : {{producto.nombreusuario}}
+      </ion-card-title>
+      <ion-card-subtitle>Precio : ${{producto.costoviaje}}</ion-card-subtitle>
+
+      <ion-card-content>
+        <ion-card-subtitle>Destino :{{producto.destino}}</ion-card-subtitle>
+        <ion-card-subtitle>Auto :{{producto.auto}}</ion-card-subtitle>
+        <ion-card-subtitle>Puestos disponibles :{{producto.puestos}}</ion-card-subtitle>
+        <ion-card-subtitle>monto a pagar por persona:{{producto.costoviaje}}</ion-card-subtitle>
+      </ion-card-content>
+
+      <ion-card-content>
+        <ion-button expand="block" shape="round" size="small" color="success" [routerLink]="['/detalle']"
+        [queryParams]="{id:producto.id}">
+          Ver detalles
+          <ion-icon slot="end" name="search"></ion-icon>
+        </ion-button>
+
+ <ion-button expand="block" shape="round" size="small" color="success" [routerLink]="['/detalle']"
+        [queryParams]="{id:producto.id}">
+          Ver detalles
+          <ion-icon slot="end" name="search"></ion-icon>
+        </ion-button>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+  <!--Infinite scroll-->
+  <ion-infinite-scroll (ionInfinite)="cargarMasProds()">
+    <ion-infinite-scroll-content loadingText="Cargando mas productos . . .">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

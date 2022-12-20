@@ -32,6 +32,19 @@ const routes: Routes = [
     path: 'historial-autos',
     loadChildren: () => import('./pedidos/historial-autos/historial-autos.module').then( m => m.HistorialAutosPageModule)
   },
+  {
+    path: 'registrar-viaje',
+    loadChildren: () => import('./registrar-viaje/registrar-viaje.module').then( m => m.RegistrarViajePageModule)
+  },
+  {
+    path: 'lista-viajes',
+    loadChildren: () => import('./lista-viajes/lista-viajes.module').then( m => m.ListaViajesPageModule)
+  },
+  {
+    path: 'detalle',
+    loadChildren: () => import('./detalle/detalle.module').then( m => m.DetallePageModule)
+  },
+
 
 ];
 

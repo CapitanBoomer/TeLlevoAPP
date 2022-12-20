@@ -19,54 +19,14 @@
   ],
   "viajes": [
     {
-      "auto": "nissan",
-      "costoviaje": 1654,
-      "destino": "san bernardo",
+      "nombreusuario": "Diego",
+      "auto": "nissan vega 112",
+      "costoviaje": 1000,
+      "destino": "acapulco",
       "puestos": 3,
-      "patente": "12gdsf",
-      "detalles": "sfdhgfdhdfghf",
-      "nombreusuario": "diego",
+      "patente": "123dsa",
+      "detalles": "me voy a acapulco",
       "id": 1
-    },
-    {
-      "nombreusuario": "",
-      "auto": "",
-      "costoviaje": 0,
-      "destino": "",
-      "puestos": 0,
-      "patente": "",
-      "detalles": "",
-      "id": 2
-    },
-    {
-      "nombreusuario": "",
-      "auto": "",
-      "costoviaje": 0,
-      "destino": "",
-      "puestos": 0,
-      "patente": "",
-      "detalles": "",
-      "id": 3
-    },
-    {
-      "nombreusuario": "",
-      "auto": "",
-      "costoviaje": 0,
-      "destino": "",
-      "puestos": 0,
-      "patente": "",
-      "detalles": "",
-      "id": 4
-    },
-    {
-      "nombreusuario": "",
-      "auto": "",
-      "costoviaje": 0,
-      "destino": "",
-      "puestos": 0,
-      "patente": "",
-      "detalles": "",
-      "id": 5
     }
   ]
 }

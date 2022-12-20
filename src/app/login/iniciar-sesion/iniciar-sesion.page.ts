@@ -27,6 +27,7 @@ export class IniciarSesionPage implements OnInit {
     this.formulario = this.fb.group({
       nombre_usuario: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]),
       pass: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(1000)]),
+
     })
   }
   public campo(control: string) {
@@ -41,7 +42,7 @@ export class IniciarSesionPage implements OnInit {
     });
     console.log(this.formulario.value)
     if (this.usuario) {
-      if (this.usuario.pass == this.formulario.value.pass) { if (this.usuario.auto == true) { this.router.navigate(['menuauto']) }
+      if (this.usuario.pass == this.formulario.value.pass) { if (this.usuario.auto== true ) { this.router.navigate(['menuauto']) }
       else { this.router.navigate(['menusinauto']) } }
       else { }
     }
